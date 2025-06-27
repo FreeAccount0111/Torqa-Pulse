@@ -1,12 +1,6 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using DG.Tweening;
-using UI;
 using UnityEngine;
-using UnityEngine.Tilemaps;
 
-namespace Gameplay
+namespace Base.Gameplay
 {
     public class LevelCtrl : MonoBehaviour
     {

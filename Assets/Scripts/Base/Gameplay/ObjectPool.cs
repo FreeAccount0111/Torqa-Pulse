@@ -89,6 +89,9 @@ public class ObjectPool : MonoBehaviour
     public static ObjectPool Instance;
 
     //khai bao pool
+    public Pool explosion;
+    public Pool enemy;
+    public Pool peen;
     public Pool dot;
     
     public Dictionary<int, int> dicClones = new Dictionary<int, int>();
@@ -102,6 +105,9 @@ public class ObjectPool : MonoBehaviour
     private void Start()
     {
         //add pool
+        pools.Add(explosion);
+        pools.Add(enemy);
+        pools.Add(peen);
         pools.Add(dot);
 
         foreach (var pool in pools)

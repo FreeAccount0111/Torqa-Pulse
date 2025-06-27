@@ -5,6 +5,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace UI
@@ -12,7 +13,7 @@ namespace UI
     public class PopupGameplay : BasePopup
     {
         [SerializeField] private Button btnHome, btnReplay;
-        [SerializeField] private Text txtLevel, txtMoves;
+        [SerializeField] private Text txtEnemy;
 
         private void Awake()
         {
@@ -20,11 +21,12 @@ namespace UI
             {
                 CircleOutline.Instance.ScaleIn(() =>
                 {
-                    PopupCtrl.Instance.HideAllPopup();
+                    /*PopupCtrl.Instance.HideAllPopup();
                     PopupCtrl.Instance.GetPopupByType<PopupHome>().ShowImmediately(true);
-                    CircleOutline.Instance.ScaleOut();
+                    SceneManager.LoadSceneAsync($"MainMenu");
+                    CircleOutline.Instance.ScaleOut();*/
                 });
-            });
+            }); 
             
             btnHome.onClick.AddListener(() =>
             {
@@ -32,14 +34,9 @@ namespace UI
             });
         }
 
-        public void UpdateLevel(int level)
+        public void UpdateEnemy(int amount)
         {
-            txtLevel.text = level.ToString();
-        }
-
-        public void UpdateMoves(int current, int max)
-        {
-            txtMoves.text = $"Moves:{current}/{max}";
+            txtEnemy.text = $"Enemies left : {amount}";
         }
     }
 }

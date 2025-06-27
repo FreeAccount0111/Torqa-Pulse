@@ -47,7 +47,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: la
+    path: Leaf
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -81,7 +81,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: la (1)
+    path: Leaf1
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -115,7 +115,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: la (2)
+    path: Leaf2
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -149,7 +149,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: la (3)
+    path: Leaf3
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -183,7 +183,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: la (4)
+    path: Leaf4
   m_PositionCurves: []
   m_ScaleCurves: []
   m_FloatCurves: []
@@ -196,7 +196,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 2988730266
+      path: 1722658777
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -205,7 +205,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2015696839
+      path: 2092247144
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -214,7 +214,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 1393050628
+      path: 3854334418
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -223,7 +223,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 1242789189
+      path: 2461747524
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -232,7 +232,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 89318274
+      path: 215997671
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -288,7 +288,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: la
+    path: Leaf
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -318,7 +318,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: la
+    path: Leaf
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -357,7 +357,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: la
+    path: Leaf
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -387,7 +387,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: la (1)
+    path: Leaf1
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -417,7 +417,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: la (1)
+    path: Leaf1
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -456,7 +456,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: la (1)
+    path: Leaf1
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -486,7 +486,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: la (2)
+    path: Leaf2
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -516,7 +516,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: la (2)
+    path: Leaf2
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -555,7 +555,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: la (2)
+    path: Leaf2
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -585,7 +585,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: la (3)
+    path: Leaf3
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -615,7 +615,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: la (3)
+    path: Leaf3
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -654,7 +654,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: la (3)
+    path: Leaf3
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -684,7 +684,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: la (4)
+    path: Leaf4
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -714,7 +714,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: la (4)
+    path: Leaf4
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -753,7 +753,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: la (4)
+    path: Leaf4
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -766,7 +766,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: la (2)
+    path: Leaf1
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -778,7 +778,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: la (2)
+    path: Leaf1
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -790,7 +790,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: la (2)
+    path: Leaf1
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -802,7 +802,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: la
+    path: Leaf2
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -814,7 +814,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: la
+    path: Leaf2
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -826,7 +826,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: la
+    path: Leaf2
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -838,7 +838,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: la (1)
+    path: Leaf
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -850,7 +850,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: la (1)
+    path: Leaf
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -862,7 +862,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: la (1)
+    path: Leaf
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -874,7 +874,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: la (4)
+    path: Leaf3
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -886,7 +886,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: la (4)
+    path: Leaf3
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -898,7 +898,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: la (4)
+    path: Leaf3
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -910,7 +910,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: la (3)
+    path: Leaf4
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -922,7 +922,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: la (3)
+    path: Leaf4
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -934,7 +934,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: la (3)
+    path: Leaf4
     classID: 4
     script: {fileID: 0}
     flags: 0

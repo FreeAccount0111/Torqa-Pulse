@@ -1,5 +1,7 @@
 using System.Collections.Generic;
+using Base.Gameplay;
 using DG.Tweening;
+using Game.Event;
 using UI;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -11,7 +13,6 @@ namespace Gameplay
         public static GameManager Instance;
         [SerializeField] private List<GameObject> levels = new List<GameObject>();
         private LevelCtrl _currentLevelCtrl;
-        public Transform map;
         public int indexCurrentLevel;
         public bool isComplete;
 
@@ -31,9 +32,9 @@ namespace Gameplay
             
             isComplete = false;
             indexCurrentLevel = indexLevel < levels.Count ? indexLevel : 0;
-            _currentLevelCtrl = Instantiate(levels[indexCurrentLevel], map).GetComponent<LevelCtrl>();
-            PopupCtrl.Instance.GetPopupByType<PopupGameplay>().UpdateLevel(indexCurrentLevel + 1);
-            CircleOutline.Instance.ScaleOut();
+            _currentLevelCtrl = Instantiate(levels[indexCurrentLevel]).GetComponent<LevelCtrl>();
+            PopupCtrl.Instance.GetPopupByType<PopupGameplay>().UpdateEnemy(indexCurrentLevel + 1);
+            CircleOutline.Instance.ScaleOut(()=> GameEvent.RaiseStartWave());
         }
 
         public void ResetLevel()
