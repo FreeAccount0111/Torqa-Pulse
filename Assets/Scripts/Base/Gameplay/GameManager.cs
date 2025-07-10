@@ -1,10 +1,13 @@
+using System;
 using System.Collections.Generic;
 using Base.Gameplay;
 using DG.Tweening;
+using Game.Enemy;
 using Game.Event;
 using UI;
 using UnityEngine;
 using UnityEngine.UIElements;
+using Zenject.SpaceFighter;
 
 namespace Gameplay
 {
@@ -15,14 +18,31 @@ namespace Gameplay
         private LevelCtrl _currentLevelCtrl;
         public int indexCurrentLevel;
         public bool isComplete;
-
+        
         public LevelCtrl CurrentLevel => _currentLevelCtrl;
+        private int score;
     
         private void Awake()
         {
             Instance = this;
             PopupCtrl.Instance.GetPopupByType<PopupGameplay>().ShowImmediately(false);
             LoadGame(UserData.GetCurrentLevel());
+        }
+
+        private void OnEnable()
+        {
+            SimpleEnemyController.OnDead += AddScore;
+        }
+
+        private void OnDisable()
+        {
+            SimpleEnemyController.OnDead -= AddScore;
+        }
+
+        private void AddScore()
+        {
+            score += 1;
+            PopupCtrl.Instance.GetPopupByType<PopupGameplay>().UpdateEnemy(score);
         }
 
         public void LoadGame(int indexLevel)
@@ -33,7 +53,8 @@ namespace Gameplay
             isComplete = false;
             indexCurrentLevel = indexLevel < levels.Count ? indexLevel : 0;
             _currentLevelCtrl = Instantiate(levels[indexCurrentLevel]).GetComponent<LevelCtrl>();
-            PopupCtrl.Instance.GetPopupByType<PopupGameplay>().UpdateEnemy(indexCurrentLevel + 1);
+            score = 0;
+            PopupCtrl.Instance.GetPopupByType<PopupGameplay>().UpdateEnemy(score);
             CircleOutline.Instance.ScaleOut(()=> GameEvent.RaiseStartWave());
         }
 
@@ -44,7 +65,7 @@ namespace Gameplay
 
         public void CheckWin()
         {
-            if(isComplete)
+            /*if(isComplete)
                 return;
 
             isComplete = true;
@@ -55,7 +76,9 @@ namespace Gameplay
                 {
                     LoadGame(indexCurrentLevel + 1);
                 });
-            });
+            });*/
+            PopupCtrl.Instance.GetPopupByType<PopupWin>().UpdateScore(score);
+            PopupCtrl.Instance.GetPopupByType<PopupWin>().ShowImmediately(true);
         }
     }
 }

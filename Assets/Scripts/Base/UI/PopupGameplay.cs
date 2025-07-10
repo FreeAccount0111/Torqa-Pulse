@@ -21,22 +21,16 @@ namespace UI
             {
                 CircleOutline.Instance.ScaleIn(() =>
                 {
-                    /*PopupCtrl.Instance.HideAllPopup();
                     PopupCtrl.Instance.GetPopupByType<PopupHome>().ShowImmediately(true);
                     SceneManager.LoadSceneAsync($"MainMenu");
-                    CircleOutline.Instance.ScaleOut();*/
+                    CircleOutline.Instance.ScaleOut();
                 });
             }); 
-            
-            btnHome.onClick.AddListener(() =>
-            {
-                GameManager.Instance.ResetLevel();
-            });
         }
 
         public void UpdateEnemy(int amount)
         {
-            txtEnemy.text = $"Enemies left : {amount}";
+            txtEnemy.text = $"Score : {amount}";
         }
     }
 }

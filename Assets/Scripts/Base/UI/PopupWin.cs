@@ -1,5 +1,6 @@
 using Gameplay;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace UI
@@ -7,6 +8,7 @@ namespace UI
     public class PopupWin : BasePopup
     {
         [SerializeField] private Button btnReplay, btnHome, btnNext;
+        [SerializeField] private Text txtScore;
 
         private void Awake()
         {
@@ -26,6 +28,7 @@ namespace UI
                 {
                     HideImmediately(true);
                     PopupCtrl.Instance.GetPopupByType<PopupHome>().ShowImmediately(false);
+                    SceneManager.LoadSceneAsync("MainMenu");
                     CircleOutline.Instance.ScaleOut();
                 });
             });
@@ -39,6 +42,11 @@ namespace UI
                     CircleOutline.Instance.ScaleOut();
                 });
             });
+        }
+
+        public void UpdateScore(int score)
+        {
+            txtScore.text = $"Score : {score}";
         }
     }
 }

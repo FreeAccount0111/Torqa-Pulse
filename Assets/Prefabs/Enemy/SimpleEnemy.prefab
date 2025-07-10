@@ -231,9 +231,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 634bd80f79865404e9dd6af9e5bfa70c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  direction: 0
   radius: 1.95
   angularSpeed: 0.25
   angle: 0
+  _rangeAttack: 0.75
+  icons:
+  - {fileID: 21300000, guid: 4da89f26ca02df34baee6a6a87499657, type: 3}
+  - {fileID: 21300000, guid: 0ed615ec9db942a4f9c8fe5e7ac942fd, type: 3}
+  - {fileID: 21300000, guid: 94e5ce9ebc9fd7a4aa985381a22b9fdf, type: 3}
+  - {fileID: 21300000, guid: 11bcf0fcd21844f42af3219edf8b1c1d, type: 3}
+  - {fileID: 21300000, guid: db59d5e80919ce446923447ca5d019e8, type: 3}
+  - {fileID: 21300000, guid: 7c1f89c65daaa9d4c9b5a901343d0f8e, type: 3}
+  enemyRenderer: {fileID: 4495962421676280237}
 --- !u!114 &3419458394221763118
 MonoBehaviour:
   m_ObjectHideFlags: 0

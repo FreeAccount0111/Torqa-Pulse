@@ -134,6 +134,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leafRenderer: {fileID: 2177143969746964619}
   original: {fileID: 1638073314861505111}
+  isEating: 0
+  hasEat: 0
 --- !u!1 &2260930400743647351
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,6 +239,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leafRenderer: {fileID: 5349252867072615236}
   original: {fileID: 7833638625774897975}
+  isEating: 0
+  hasEat: 0
 --- !u!1 &2674157647056589814
 GameObject:
   m_ObjectHideFlags: 0
@@ -817,6 +821,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leafRenderer: {fileID: 130989545056381704}
   original: {fileID: 3941639669219413565}
+  isEating: 0
+  hasEat: 0
 --- !u!1 &5945803641745316098
 GameObject:
   m_ObjectHideFlags: 0
@@ -1209,6 +1215,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leafRenderer: {fileID: 7148238000631010381}
   original: {fileID: 2967829172303483325}
+  isEating: 0
+  hasEat: 0
 --- !u!1 &8265092345432219285
 GameObject:
   m_ObjectHideFlags: 0
@@ -1346,7 +1354,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15296d9b9b5563a4fba99cbd363ff700, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leafs: []
+  leafs:
+  - {fileID: 7074263313599990930}
+  - {fileID: 2445501817145574475}
+  - {fileID: 5905117945292090227}
+  - {fileID: 7398667533690766251}
+  - {fileID: 7411310253850364913}
 --- !u!95 &4915544437401973407
 Animator:
   serializedVersion: 7
@@ -1507,3 +1520,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leafRenderer: {fileID: 6486967258490496183}
   original: {fileID: 1794951302021699448}
+  isEating: 0
+  hasEat: 0

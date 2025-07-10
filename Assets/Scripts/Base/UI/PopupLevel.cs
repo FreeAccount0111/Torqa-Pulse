@@ -20,15 +20,15 @@ namespace UI
                 int index = i;
                 levelBtns[index].AddListener(() =>
                 {
-                    if (!UserData.GetLevelLock(index))
-                    {
+                    /*if (!UserData.GetLevelLock(index))
+                    {*/
                         UserData.SetCurrentLevel(index);
                         CircleOutline.Instance.ScaleIn(() =>
                         {
                             HideImmediately(true);
                             SceneManager.LoadSceneAsync($"Gameplay");
                         });
-                    }
+                    //}
                 });
             }
 
@@ -47,10 +47,10 @@ namespace UI
 
         private void UpdateLockLevel()
         {
-            for (int i = 0; i < levelBtns.Count; i++)
+            /*for (int i = 0; i < levelBtns.Count; i++)
             {
                 levelBtns[i].SetLevelBtn(i);
-            }
+            }*/
         }
     }
 }

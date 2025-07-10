@@ -129,6 +129,7 @@ GameObject:
   - component: {fileID: 8520574773568274458}
   - component: {fileID: 6923795736889706693}
   - component: {fileID: 9029836846808236709}
+  - component: {fileID: 7435313934869193590}
   m_Layer: 0
   m_Name: tree3
   m_TagString: Untagged
@@ -233,6 +234,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7435313934869193590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803043830360160113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15296d9b9b5563a4fba99cbd363ff700, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leafs:
+  - {fileID: 3941474807792771616}
+  - {fileID: 6335249248980963412}
+  - {fileID: 2208526313644107113}
+  - {fileID: 7017597828560621535}
+  - {fileID: 4200707740428545305}
 --- !u!1 &2779737411449118717
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,6 +355,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leafRenderer: {fileID: 8360364748319978555}
   original: {fileID: 490588357593598706}
+  isEating: 0
+  hasEat: 0
 --- !u!1 &3682718462142482051
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,6 +460,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leafRenderer: {fileID: 97078251808196625}
   original: {fileID: 2096869923143683506}
+  isEating: 0
+  hasEat: 0
 --- !u!1 &4320712953816958488
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,6 +705,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leafRenderer: {fileID: 4568124094993698700}
   original: {fileID: 1356519442205012352}
+  isEating: 0
+  hasEat: 0
 --- !u!1 &7449944072955144532
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,6 +916,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leafRenderer: {fileID: 5819124805181657315}
   original: {fileID: 9169206044721510474}
+  isEating: 0
+  hasEat: 0
 --- !u!1 &8351088853215019849
 GameObject:
   m_ObjectHideFlags: 0
@@ -994,6 +1021,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leafRenderer: {fileID: 843488213670197115}
   original: {fileID: 1832720731099705956}
+  isEating: 0
+  hasEat: 0
 --- !u!1 &8529844520738377322
 GameObject:
   m_ObjectHideFlags: 0
